@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration - Sandip University</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🎓 Sandip University</h1>
+
+        <p>Event Registration</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <h2 class="section-title">
+            📝 Register for Event
+        </h2>
+
+
+        <div class="form-box">
+
+            <form id="registrationForm">
+
+                <label>Student Name</label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label>PRN Number</label>
+
+                <input
+                    type="text"
+                    id="prn"
+                    placeholder="Enter your PRN"
+                    required
+                >
+
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label>Department</label>
+
+                <select id="department" required>
+
+                    <option value="">
+                        Select Department
+                    </option>
+
+                    <option>CSE</option>
+                    <option>CSE-AIML</option>
+                    <option>ECE</option>
+                    <option>Mechanical</option>
+                    <option>Civil</option>
+
+                </select>
+
+
+                <label>Select Event</label>
+
+                <select id="event" required>
+
+                    <option value="">
+                        Select Event
+                    </option>
+
+                    <option>Sandipotsav</option>
+                    <option>INSIGHT Tech Fest</option>
+                    <option>Sports Fest</option>
+                    <option>Sandip Mega Job Fair</option>
+
+                </select>
+
+
+                <button type="submit">
+                    Register Now
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <h3>🎓 Sandip University</h3>
+
+        <p>
+            College Event Management System
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        document
+            .getElementById("registrationForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                alert(
+                    "✅ Registration Successful!"
+                );
+
+                this.reset();
+
+            });
+
+    </script>
+
+</body>
+
+</html>

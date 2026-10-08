@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sandip University Events</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+
+        <div class="logo">
+            🎓 SANDIP UNIVERSITY
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#events">Events</a>
+            <a href="register.html">Register</a>
+        </nav>
+
+    </header>
+    
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-overlay">
+
+            <p class="welcome">WELCOME TO</p>
+
+            <h1>
+                SANDIP UNIVERSITY
+            </h1>
+
+            <h2>
+                EVENT MANAGEMENT SYSTEM
+            </h2>
+
+            <p>
+                Discover events • Register • Participate • Celebrate
+            </p>
+
+            <a href="#events" class="explore-btn">
+                Explore Events
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- EVENTS -->
+
+    <section id="events" class="events-section">
+
+        <p class="small-heading">
+            WHAT'S HAPPENING
+        </p>
+
+        <h2>
+            Explore Our Events
+        </h2>
+
+        <p class="subtitle">
+            Discover exciting cultural, technical, sports and career
+            events at Sandip University.
+        </p>
+
+        <div id="eventContainer" class="event-container"></div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="category-section">
+
+        <p class="small-heading">
+            DISCOVER
+        </p>
+
+        <h2>
+            Event Categories
+        </h2>
+
+        <div class="categories">
+
+            <div class="category-card">
+                <span>🎭</span>
+                <h3>Cultural</h3>
+                <p>Dance, music, art and celebrations</p>
+            </div>
+
+            <div class="category-card">
+                <span>💻</span>
+                <h3>Technical</h3>
+                <p>Hackathons, coding and workshops</p>
+            </div>
+
+            <div class="category-card">
+                <span>🏆</span>
+                <h3>Sports</h3>
+                <p>Competitions and sporting activities</p>
+            </div>
+
+            <div class="category-card">
+                <span>💼</span>
+                <h3>Career</h3>
+                <p>Jobs, internships and career events</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- QR CODE SECTION -->
+
+<section class="qr-section">
+
+    <p class="small-heading">SCAN & EXPLORE</p>
+
+    <h2>📱 Visit Our Website</h2>
+
+    <p>
+        Scan the QR code to open the
+        Sandip University Event Management System.
+    </p>
+
+    <div class="qr-box">
+
+        <div id="qrcode"></div>
+
+        <p class="scan-text">
+            Scan Me!
+        </p>
+
+    </div>
+
+</section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>🎓 SANDIP UNIVERSITY</h2>
+
+        <p>
+            College Event Management System
+        </p>
+
+        <p>
+            © 2026 Sandip University
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: window.location.href,
+        width: 180,
+        height: 180
+    });
+</script>
+
+</body>
+
+</html>
